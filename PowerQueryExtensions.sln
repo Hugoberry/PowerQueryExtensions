@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26507.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Table", "src\Table\Table.mproj", "{BC5E50DE-5AE8-481C-B6BE-CC500490770C}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "List", "src\List\List.mproj", "{BF55FED0-B51D-420A-84A0-F63F677CCA2C}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Date", "src\Date\Date.mproj", "{5579955A-C61D-4FBD-80DB-95C20E2AE00D}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Text", "src\Text\Text.mproj", "{CDA74E9B-E9EE-493A-BD2E-C93AA250EF3B}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Number", "src\Number\Number.mproj", "{1916BB62-D744-4EB8-86B2-33D0B9315A15}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Splitter", "src\Splitter\Splitter.mproj", "{846B0CC1-2F97-4E7D-BEEB-3E9869AC76A0}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Value", "src\Value\Value.mproj", "{412F037C-A922-4EB2-BB7B-5F1D509FC400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC5E50DE-5AE8-481C-B6BE-CC500490770C}.Debug|x86.ActiveCfg = Debug|x86
+		{BC5E50DE-5AE8-481C-B6BE-CC500490770C}.Debug|x86.Build.0 = Debug|x86
+		{BC5E50DE-5AE8-481C-B6BE-CC500490770C}.Release|x86.ActiveCfg = Release|x86
+		{BC5E50DE-5AE8-481C-B6BE-CC500490770C}.Release|x86.Build.0 = Release|x86
+		{BF55FED0-B51D-420A-84A0-F63F677CCA2C}.Debug|x86.ActiveCfg = Debug|x86
+		{BF55FED0-B51D-420A-84A0-F63F677CCA2C}.Debug|x86.Build.0 = Debug|x86
+		{BF55FED0-B51D-420A-84A0-F63F677CCA2C}.Release|x86.ActiveCfg = Release|x86
+		{BF55FED0-B51D-420A-84A0-F63F677CCA2C}.Release|x86.Build.0 = Release|x86
+		{5579955A-C61D-4FBD-80DB-95C20E2AE00D}.Debug|x86.ActiveCfg = Debug|x86
+		{5579955A-C61D-4FBD-80DB-95C20E2AE00D}.Debug|x86.Build.0 = Debug|x86
+		{5579955A-C61D-4FBD-80DB-95C20E2AE00D}.Release|x86.ActiveCfg = Release|x86
+		{5579955A-C61D-4FBD-80DB-95C20E2AE00D}.Release|x86.Build.0 = Release|x86
+		{CDA74E9B-E9EE-493A-BD2E-C93AA250EF3B}.Debug|x86.ActiveCfg = Debug|x86
+		{CDA74E9B-E9EE-493A-BD2E-C93AA250EF3B}.Debug|x86.Build.0 = Debug|x86
+		{CDA74E9B-E9EE-493A-BD2E-C93AA250EF3B}.Release|x86.ActiveCfg = Release|x86
+		{CDA74E9B-E9EE-493A-BD2E-C93AA250EF3B}.Release|x86.Build.0 = Release|x86
+		{1916BB62-D744-4EB8-86B2-33D0B9315A15}.Debug|x86.ActiveCfg = Debug|x86
+		{1916BB62-D744-4EB8-86B2-33D0B9315A15}.Debug|x86.Build.0 = Debug|x86
+		{1916BB62-D744-4EB8-86B2-33D0B9315A15}.Release|x86.ActiveCfg = Release|x86
+		{1916BB62-D744-4EB8-86B2-33D0B9315A15}.Release|x86.Build.0 = Release|x86
+		{846B0CC1-2F97-4E7D-BEEB-3E9869AC76A0}.Debug|x86.ActiveCfg = Debug|x86
+		{846B0CC1-2F97-4E7D-BEEB-3E9869AC76A0}.Debug|x86.Build.0 = Debug|x86
+		{846B0CC1-2F97-4E7D-BEEB-3E9869AC76A0}.Release|x86.ActiveCfg = Release|x86
+		{846B0CC1-2F97-4E7D-BEEB-3E9869AC76A0}.Release|x86.Build.0 = Release|x86
+		{412F037C-A922-4EB2-BB7B-5F1D509FC400}.Debug|x86.ActiveCfg = Debug|x86
+		{412F037C-A922-4EB2-BB7B-5F1D509FC400}.Debug|x86.Build.0 = Debug|x86
+		{412F037C-A922-4EB2-BB7B-5F1D509FC400}.Release|x86.ActiveCfg = Release|x86
+		{412F037C-A922-4EB2-BB7B-5F1D509FC400}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
