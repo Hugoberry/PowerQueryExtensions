@@ -17,6 +17,11 @@ Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Splitter", "src\Splitter\Sp
 EndProject
 Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Value", "src\Value\Value.mproj", "{412F037C-A922-4EB2-BB7B-5F1D509FC400}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA2BABA9-6435-428E-9848-C1C7920A0266}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
