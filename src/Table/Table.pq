@@ -108,7 +108,23 @@ shared Table.TransformColumn = (table as table, column as text, transform as fun
 shared Table.RenameColumn = (table as table, column as text, newName as text) => Table.RenameColumns(table, {{column, newName}});
 shared Table.RenameAndTransformColumn = (table, currentName as text, newName as text, transform as function) => Table.TransformColumn(Table.RenameColumns(table, {currentName, newName}), newName, transform);
 
-
+shared Table.ToXml = (t) =>
+           "<table>"&
+           {List.Accumulate(
+                Table.ToRecords(t),
+                "",
+                (state,curr)=>state&
+                "<row>"&
+                    {List.Accumulate(
+                         Record.FieldNames(curr),
+		         "",
+		         (s,c)=>s&Text.Format("<#{0}>#{1}</#{0}>",
+		                             {c,
+			                     Record.Field(curr,c)})
+	             )}
+                &"</row>"
+           )}
+        &"</table>";
 ///////////////////////// 
 // Dependencies        //
 /////////////////////////

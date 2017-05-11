@@ -41,7 +41,36 @@ shared Number.ToLetters = Document(
             in
                 if value <= 26 then GetLetter(value) else func(value, 1) & GetLetter(value)
 );
+shared Number.Reverse8BitInt  = (x) =>
+        Number.Mod(Number.BitwiseAnd((x* 0x0202020202),0x010884422010),1023);
+shared Number.Reverse32BitInt = (x) =>
+    let
+        b0 = Number.BitwiseAnd(x,0xff),
+        b1 = Number.BitwiseShiftRight(Number.BitwiseAnd(x,0xff00),8),
+        b2 = Number.BitwiseShiftRight(Number.BitwiseAnd(x,0xff0000),16),
+        b3 = Number.BitwiseShiftRight(Number.BitwiseAnd(x,0xff000000),24)
+    in   
+        Number.BitwiseOr(
+                 Number.BitwiseOr(
+                    Number.BitwiseShiftLeft(Number.Reverse8BitInt(b0),24),
+                    Number.BitwiseShiftLeft(Number.Reverse8BitInt(b1),16)),
+                 Number.BitwiseOr(
+                    Number.BitwiseShiftLeft(Number.Reverse8BitInt(b2),8),
+                    Number.Reverse8BitInt(b3)));
 
+shared Number.DecToBin = (num as number)=>
+        List.Last(
+            List.Generate(
+                   () =>[reminder = num,
+                         binString= Number.ToText(Number.BitwiseAnd(reminder,1))],
+                   each [reminder]> 0,
+                   each [reminder = Number.BitwiseShiftRight([reminder],1),
+                         binString= Number.ToText(Number.BitwiseAnd(reminder,1))&[binString]],
+                   each [binString]
+                ));
+
+shared Number.HexToDec = (hexString as text) 
+                            => Expression.Evaluate("0x"&hexString);
 /////////////////////////
 // Dependencies        //
 /////////////////////////

@@ -33,7 +33,23 @@ shared List.ToText = Document(
             List.Accumulate(list, "{", (state, current) => current & Text.From(current)) & "}"
 );
 
+shared List.Swap = (_,_from as number ,_to as number) => 
+       let
+          from = List.Min({_from,_to}),
+          to = List.Max({_from,_to})                        
+       in if from=to then _ else
+          List.Range(_,0,from)
+          &{_{to}}
+          &List.Range(_,from+1,to-from-1)
+          &{_{from}}
+          &List.Range(_,to+1);
 
+shared List.Shuffle = (n) => 
+         List.Accumulate({0..(n-2)},{0..n},(_,iterator)=> 
+                                   List.Swap(List.Buffer(_),
+                                        Number.Round(Number.RandomBetween(iterator,n)),
+                                        iterator
+                                      ));
 /////////////////////////
 // Dependencies        //
 /////////////////////////
