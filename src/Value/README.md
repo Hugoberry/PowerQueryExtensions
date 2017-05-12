@@ -1,0 +1,3 @@
+# Value Module
+
+## Value.TypeText
